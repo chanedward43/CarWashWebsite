@@ -1,0 +1,51 @@
+/* Shared, theme-neutral switcher bar — included by every version (v1-v5).
+   This is tool chrome, not part of any theme, so it deliberately does not
+   use any version's fonts/palette except for a small active-tab accent. */
+
+.theme-switcher {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  background: #14161a;
+  font: 600 0.7rem/1.4 system-ui, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.theme-switcher__label {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+
+.theme-switcher a {
+  color: #cbd0d6;
+  text-decoration: none;
+  padding: 0.4rem 0.65rem;
+  border-radius: 4px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.theme-switcher a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.theme-switcher a[aria-current="page"] {
+  background: var(--switcher-accent, #fff);
+  color: var(--switcher-accent-ink, #14161a);
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .theme-switcher {
+    padding: 0.6rem 1.5rem;
+  }
+}

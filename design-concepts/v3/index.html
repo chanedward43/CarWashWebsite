@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satisfied Car Wash — Riverside Trust (Concept 3)</title>
+  <meta name="description" content="Satisfied Car Wash — hand car wash and detailing in Chamkar Doung, Cambodia. Walk in or book ahead." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/design-concepts/switcher.css" />
+  <link rel="stylesheet" href="/design-concepts/v3/styles.css" />
+</head>
+<body>
+
+  <nav class="theme-switcher" aria-label="Design theme switcher" style="--switcher-accent:#D19A3C; --switcher-accent-ink:#0B0F1A;">
+    <span class="theme-switcher__label">Concept:</span>
+    <a href="/design-concepts/v1/index.html">1 · Modern Sabai</a>
+    <a href="/design-concepts/v2/index.html">2 · Auto Atelier</a>
+    <a href="/design-concepts/v3/index.html" aria-current="page">3 · Riverside Trust</a>
+    <a href="/design-concepts/v4/index.html">4 · Krama &amp; Concrete</a>
+    <a href="/design-concepts/v5/index.html">5 · Clearwater Minimal</a>
+  </nav>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top">Satisfied Car Wash</a>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--gold primary-nav__cta" href="#contact">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__copy">
+        <h1 id="hero-heading">Your Car, Properly Cared For</h1>
+        <p class="hero__subtext">Hand car wash and detailing in Chamkar Doung — walk in or book ahead, every vehicle welcome.</p>
+        <a class="btn btn--gold btn--lg" href="#contact">Book Now</a>
+      </div>
+      <div class="hero__media">
+        <img src="/assets/images/Carwash10.jpg" alt="Overhead banner at Satisfied Car Wash reading its Khmer name, with a row of vehicle brand logos and the Cambodian flag flying above the wash bay." />
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <p class="hero__caption">The hand-painted sign over the bay reads <span lang="km">លាងឡាន ពេញចិត្ត</span> — “Satisfied Car Wash” in Khmer.</p>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-strip__inner">
+        <span>Every vehicle welcome — sedans to pickups</span>
+        <span>Cambodian-owned, neighborhood car wash</span>
+        <span>Walk-ins welcome, or book ahead</span>
+      </div>
+    </div>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <h2>Services &amp; Pricing</h2>
+
+        <ul class="price-list">
+          <li class="price-list__row">
+            <div class="price-list__info">
+              <h3>Express Wash</h3>
+              <p>Exterior rinse, foam wash, and dry — quick and thorough.</p>
+            </div>
+            <p class="price-list__price"><span class="price-list__from">from</span> <span class="price-list__amount">$3</span></p>
+          </li>
+          <li class="price-list__row">
+            <div class="price-list__info">
+              <h3>Value Wash</h3>
+              <p>Exterior wash plus wheels, tires, and windows cleaned inside and out.</p>
+            </div>
+            <p class="price-list__price"><span class="price-list__from">from</span> <span class="price-list__amount">$6</span></p>
+          </li>
+          <li class="price-list__row">
+            <div class="price-list__info">
+              <h3>Interior Detail</h3>
+              <p>Vacuum, dashboard, and seats cleaned by hand.</p>
+            </div>
+            <p class="price-list__price"><span class="price-list__from">from</span> <span class="price-list__amount">$10</span></p>
+          </li>
+          <li class="price-list__row">
+            <div class="price-list__info">
+              <h3>Full Service</h3>
+              <p>Complete exterior and interior detail, inside and out.</p>
+            </div>
+            <p class="price-list__price"><span class="price-list__from">from</span> <span class="price-list__amount">$15</span></p>
+          </li>
+        </ul>
+
+        <p class="price-note">Pricing may vary by vehicle size — sedan, SUV, pickup, or van.</p>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-grid__item gallery-grid__item--accent">
+            <img src="/assets/images/Carwash1.jpg" style="--ar:4/5;" alt="Wide view of the wash bay with concrete wash troughs, a yellow service-list banner, and a blue water tank." />
+          </figure>
+          <figure class="gallery-grid__item">
+            <img src="/assets/images/Carwash2.jpg" style="--ar:4/3;" alt="An orange pickup truck being washed at street level, with workers, a resting dog, and neighboring shopfront signage." />
+          </figure>
+          <figure class="gallery-grid__item">
+            <img src="/assets/images/Carwash9.jpg" style="--ar:16/11;" alt="Covered walkway with a blue water tank, drainage channel, and street view toward neighboring shops." />
+          </figure>
+          <figure class="gallery-grid__item gallery-grid__item--accent">
+            <img src="/assets/images/Carwash11.jpg" style="--ar:5/6;" alt="Wider view of the wash bay's overhead banner with neighboring shops visible along the street." />
+          </figure>
+          <figure class="gallery-grid__item">
+            <img src="/assets/images/Carwash14.jpg" style="--ar:4/3;" alt="An orange pickup truck at the wash bay with workers nearby and a dog resting in the shade." />
+          </figure>
+          <figure class="gallery-grid__item">
+            <img src="/assets/images/Carwash6.jpg" style="--ar:5/4;" alt="Empty wash-bay troughs with a product shelf and the yellow service banner in the background." />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <hr class="rule" />
+        <p class="about__text">Satisfied Car Wash is a neighborhood hand car wash on Chamkar Doung Street, built around straightforward service and a clean, careful finish. We wash and detail every vehicle by hand — from daily runabouts to work trucks — because a properly cared-for car should be within easy reach, not a luxury. Stop by, or send us a message to book ahead.</p>
+        <hr class="rule" />
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+
+        <div class="contact__form-wrap">
+          <h2>Book a Wash</h2>
+
+          <form id="bookingForm" novalidate>
+            <div class="field" data-field>
+              <label for="field-name">Name</label>
+              <input type="text" id="field-name" name="name" required autocomplete="name" />
+              <p class="field__error" id="error-name"></p>
+            </div>
+
+            <div class="field" data-field data-error-message="Enter a valid phone number.">
+              <label for="field-phone">Phone</label>
+              <input type="tel" id="field-phone" name="phone" required autocomplete="tel" />
+              <p class="field__error" id="error-phone"></p>
+            </div>
+
+            <div class="field">
+              <label for="field-vehicle">Vehicle Type</label>
+              <select id="field-vehicle" name="vehicle">
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pickup</option>
+                <option value="van">Van</option>
+              </select>
+            </div>
+
+            <fieldset class="field field--checkboxes">
+              <legend>Service</legend>
+              <label class="checkbox-row">
+                <input type="checkbox" name="service" value="Express Wash" />
+                <span>Express Wash</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="service" value="Value Wash" />
+                <span>Value Wash</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="service" value="Interior Detail" />
+                <span>Interior Detail</span>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" name="service" value="Full Service" />
+                <span>Full Service</span>
+              </label>
+            </fieldset>
+
+            <div class="field">
+              <label for="field-message">Message <span class="field__optional">(optional)</span></label>
+              <textarea id="field-message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--gold">Send Request</button>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden tabindex="-1" aria-live="polite">
+            <h3>Thanks — we’ll call you back.</h3>
+            <p>We’ve received your request and will confirm a time with you shortly.</p>
+            <button type="button" class="btn btn--outline-gold form-success__reset" id="formReset">Send another request</button>
+          </div>
+        </div>
+
+        <div class="contact__side">
+          <h2>Reach Us Directly</h2>
+          <p>Prefer to chat? Message us on Telegram or WhatsApp.</p>
+
+          <div class="contact__links">
+            <!-- Placeholder Telegram handle — replace with the owner's real Telegram link. -->
+            <a class="btn btn--outline-gold" href="https://t.me/satisfiedcarwash">Telegram</a>
+            <!-- Placeholder WhatsApp number — replace with the owner's real WhatsApp number. -->
+            <a class="btn btn--outline-gold" href="https://wa.me/85512345678">WhatsApp</a>
+          </div>
+
+          <dl class="contact__meta">
+            <div>
+              <dt>Phone</dt>
+              <!-- Placeholder phone number — replace with the real business line. -->
+              <dd><a href="tel:+85512345678">+855 12 345 678</a></dd>
+            </div>
+            <div>
+              <dt>Facebook</dt>
+              <!-- Placeholder Facebook page — replace with the real page URL. -->
+              <dd><a href="https://facebook.com/satisfiedcarwash">facebook.com/satisfiedcarwash</a></dd>
+            </div>
+          </dl>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=FV8Q%2BMGX+Phnom+Penh+Cambodia&output=embed"
+              title="Map showing Satisfied Car Wash on Chamkar Doung Street"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>Satisfied Car Wash</h3>
+        <p>Spean Thmor, Sangkat, Chamkar Doung Street (217), 8370, Cambodia</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=FV8Q%2BMGX+Phnom+Penh+Cambodia" target="_blank" rel="noopener">View on Google Maps (FV8Q+MGX)</a></p>
+        <!-- Placeholder phone number — replace with the real business line. -->
+        <p><a href="tel:+85512345678">+855 12 345 678</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Hours</h3>
+        <dl class="hours-list">
+          <div>
+            <dt>Mon–Sat</dt>
+            <dd>7:00 AM – 6:00 PM</dd>
+          </div>
+          <div>
+            <dt>Sun</dt>
+            <dd>7:00 AM – 5:00 PM</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="footer__col">
+        <h3>Connect</h3>
+        <ul class="footer__social">
+          <li><a href="https://t.me/satisfiedcarwash">Telegram</a></li>
+          <li><a href="https://wa.me/85512345678">WhatsApp</a></li>
+          <li><a href="https://facebook.com/satisfiedcarwash">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Satisfied Car Wash.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="/design-concepts/v3/main.js"></script>
+</body>
+</html>

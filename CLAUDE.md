@@ -3,6 +3,9 @@
 ## Business
 - Name: Satisfied Car Wash
 - Address: Spean Thmor, Sangkat, Chamkar Doung Street (217), 8370, Cambodia
+- Google Maps Plus Code: FV8Q+MGX, Phnom Penh, Cambodia (verified live on Google Maps —
+  use this for map embeds/links instead of the street address, which is less precise
+  for Cambodian addressing)
 
 ## Stack
 Plain HTML/CSS/JS. No build step, no framework, no package manager.
