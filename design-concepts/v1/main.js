@@ -1,6 +1,6 @@
 // Satisfied Car Wash — Design Concept v1 "Modern Sabai"
-// Handles: sticky-offset measurement, mobile nav toggle, smooth-scroll
-// anchor nav, and the booking form's client-side validation + success state.
+// Handles: sticky-offset measurement, mobile nav toggle, and smooth-scroll
+// anchor nav.
 
 (function () {
   "use strict";
@@ -77,65 +77,5 @@
         history.pushState(null, "", "#" + targetId);
       }
     });
-  });
-
-  /* ---- Booking form validation + inline success state ---- */
-  var form = document.getElementById("booking-form");
-  if (!form) return;
-
-  var successMessage = document.getElementById("form-success");
-
-  var validators = {
-    name: function (value) {
-      return value.trim().length > 0 ? "" : "Please enter your name.";
-    },
-    phone: function (value) {
-      return value.trim().length > 0 ? "" : "Please enter a phone number we can reach you on.";
-    },
-    vehicle: function (value) {
-      return value ? "" : "Please select your vehicle type.";
-    },
-  };
-
-  function showError(fieldName, message) {
-    var errorEl = document.getElementById("error-" + fieldName);
-    if (errorEl) {
-      errorEl.textContent = message;
-    }
-  }
-
-  function clearErrors() {
-    form.querySelectorAll(".field-error").forEach(function (el) {
-      el.textContent = "";
-    });
-  }
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    clearErrors();
-    successMessage.hidden = true;
-
-    var isValid = true;
-    var firstInvalid = null;
-
-    Object.keys(validators).forEach(function (fieldName) {
-      var field = form.elements[fieldName];
-      var message = validators[fieldName](field.value);
-      if (message) {
-        isValid = false;
-        showError(fieldName, message);
-        if (!firstInvalid) firstInvalid = field;
-      }
-    });
-
-    if (!isValid) {
-      if (firstInvalid) firstInvalid.focus();
-      return;
-    }
-
-    // No backend exists yet — show an inline confirmation and reset.
-    form.reset();
-    successMessage.hidden = false;
-    successMessage.focus && successMessage.focus();
   });
 })();

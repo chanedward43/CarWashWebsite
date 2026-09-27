@@ -15,6 +15,7 @@
   /* Type */
   --font-display: "Archivo Black", "Arial Black", sans-serif;
   --font-body: "Barlow", "Segoe UI", sans-serif;
+  --font-khmer: "Noto Sans Khmer", "Barlow", sans-serif;
 
   /* Shape — hard rule for this concept: everything sharp */
   --radius: 0;
@@ -591,6 +592,15 @@ button {
   font-family: var(--font-display);
   font-size: 1.6rem;
   color: var(--ink);
+}
+
+[lang="km"] {
+  font-family: var(--font-khmer);
+}
+
+.service-price[lang="km"] {
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {

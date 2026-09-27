@@ -571,6 +571,11 @@ button {
   justify-self: end;
 }
 
+.ledger__price[lang="km"] {
+  font-family: var(--font-khmer);
+  font-weight: 700;
+}
+
 .ledger__footnote {
   padding-top: var(--space-2);
   font-size: 0.85rem;
@@ -809,21 +814,13 @@ button {
   font-weight: 600;
 }
 
-.chat-link--telegram {
+.chat-link--primary {
   background: var(--olive);
   min-height: 64px;
   font-size: 1.15rem;
 }
 
-.chat-link--telegram:hover {
-  background: var(--olive-dark);
-}
-
-.chat-link--whatsapp {
-  font-size: 1rem;
-}
-
-.chat-link--whatsapp:hover {
+.chat-link--primary:hover {
   background: var(--olive-dark);
 }
 
@@ -981,7 +978,8 @@ button {
 
 @media (min-width: 900px) {
   .contact__grid {
-    grid-template-columns: 1fr 1fr;
+    max-width: 640px;
+    margin-inline: auto;
   }
 }
 

@@ -1,11 +1,10 @@
 // Satisfied Car Wash — Concept 4 "Krama & Concrete"
-// Mobile nav toggle, smooth-scroll active-state, and booking form validation.
+// Mobile nav toggle and smooth-scroll active-state.
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavToggle();
   initScrollSpy();
   initSmoothScrollClose();
-  initBookingForm();
 });
 
 function initNavToggle() {
@@ -64,59 +63,4 @@ function initScrollSpy() {
   );
 
   sections.forEach((section) => observer.observe(section));
-}
-
-function initBookingForm() {
-  const form = document.getElementById("booking-form");
-  if (!form) return;
-
-  const successMessage = form.querySelector("[data-success]");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let isValid = true;
-
-    form.querySelectorAll("input[required]").forEach((input) => {
-      const field = input.closest(".form-field");
-      const error = form.querySelector(`[data-error-for="${input.id}"]`);
-      const filled = input.value.trim().length > 0;
-
-      if (!filled) {
-        isValid = false;
-        if (field) field.classList.add("has-error");
-        if (error) error.hidden = false;
-      } else {
-        if (field) field.classList.remove("has-error");
-        if (error) error.hidden = true;
-      }
-    });
-
-    if (!isValid) {
-      const firstError = form.querySelector(".has-error input");
-      if (firstError) firstError.focus();
-      return;
-    }
-
-    form.querySelectorAll(".form-field").forEach((field) => field.classList.remove("has-error"));
-    form.querySelectorAll(".form-error").forEach((error) => (error.hidden = true));
-
-    form.reset();
-    if (successMessage) {
-      successMessage.hidden = false;
-      successMessage.focus?.();
-    }
-  });
-
-  // Clear an individual field's error as soon as the visitor fixes it.
-  form.querySelectorAll("input[required]").forEach((input) => {
-    input.addEventListener("input", () => {
-      if (input.value.trim().length > 0) {
-        const field = input.closest(".form-field");
-        const error = form.querySelector(`[data-error-for="${input.id}"]`);
-        if (field) field.classList.remove("has-error");
-        if (error) error.hidden = true;
-      }
-    });
-  });
 }

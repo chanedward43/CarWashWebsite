@@ -21,6 +21,7 @@
   --border: #ddd6ca;
 
   --font: "Archivo", -apple-system, "Segoe UI", sans-serif;
+  --font-khmer: "Noto Sans Khmer", "Archivo", sans-serif;
 
   --space-3xs: 0.375rem;
   --space-2xs: 0.625rem;
@@ -60,6 +61,10 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+[lang="km"] {
+  font-family: var(--font-khmer);
 }
 
 h1, h2, h3 {
@@ -357,7 +362,7 @@ section[id] {
     align-self: auto;
   }
 
-  /* Phone + Telegram only rejoin the bar once there is room for the
+  /* Phone number only rejoins the bar once there is room for the
      whole row to stay on one line (see nav single-line hard rule). */
   .nav-contact {
     display: none;
@@ -574,6 +579,12 @@ section[id] {
   font-weight: 900;
   color: var(--terracotta);
   letter-spacing: -0.03em;
+}
+
+.service-price[lang="km"] {
+  font-family: var(--font-khmer);
+  font-size: 1.5rem;
+  letter-spacing: 0;
 }
 
 .price-from {

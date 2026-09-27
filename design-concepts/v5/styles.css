@@ -17,6 +17,7 @@
   --font-display: "Manrope", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+  --font-khmer: "Noto Sans Khmer", "Manrope", sans-serif;
 
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -381,6 +382,15 @@ a {
   color: var(--accent);
   font-weight: 500;
   font-size: 1.15rem;
+}
+
+[lang="km"] {
+  font-family: var(--font-khmer);
+}
+
+.services__price[lang="km"] {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .services__from {

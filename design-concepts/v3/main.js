@@ -1,6 +1,5 @@
 /* Satisfied Car Wash — Design Concept v3 "Riverside Trust"
-   Mobile nav toggle, smooth-scroll for anchor nav, and a client-side
-   booking form handler (no backend exists — this simulates submission). */
+   Mobile nav toggle and smooth-scroll for anchor nav. */
 
 (function () {
   "use strict";
@@ -38,86 +37,4 @@
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
-
-  /* Booking form: client-side validation + simulated submit */
-  var form = document.getElementById("bookingForm");
-  var success = document.getElementById("formSuccess");
-  var resetButton = document.getElementById("formReset");
-
-  function showFieldError(field, message) {
-    field.classList.add("field--error");
-    var errorEl = field.querySelector(".field__error");
-    if (errorEl) {
-      errorEl.textContent = message;
-    }
-  }
-
-  function clearFieldError(field) {
-    field.classList.remove("field--error");
-    var errorEl = field.querySelector(".field__error");
-    if (errorEl) {
-      errorEl.textContent = "";
-    }
-  }
-
-  if (form) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      var isValid = true;
-      var firstInvalidInput = null;
-
-      form.querySelectorAll("[data-field]").forEach(function (field) {
-        var input = field.querySelector("input, select, textarea");
-        if (!input) {
-          return;
-        }
-
-        clearFieldError(field);
-
-        if (input.hasAttribute("required") && !input.value.trim()) {
-          showFieldError(field, "This field is required.");
-          isValid = false;
-          firstInvalidInput = firstInvalidInput || input;
-          return;
-        }
-
-        if (input.type === "tel" && input.value.trim()) {
-          var digitCount = input.value.replace(/[^0-9]/g, "").length;
-          if (digitCount < 8) {
-            var message = field.dataset.errorMessage || "Enter a valid phone number.";
-            showFieldError(field, message);
-            isValid = false;
-            firstInvalidInput = firstInvalidInput || input;
-          }
-        }
-      });
-
-      if (!isValid) {
-        if (firstInvalidInput) {
-          firstInvalidInput.focus();
-        }
-        return;
-      }
-
-      form.hidden = true;
-      if (success) {
-        success.hidden = false;
-        success.focus();
-      }
-    });
-  }
-
-  if (resetButton && form && success) {
-    resetButton.addEventListener("click", function () {
-      form.reset();
-      form.querySelectorAll("[data-field]").forEach(clearFieldError);
-      form.hidden = false;
-      success.hidden = true;
-      var firstInput = form.querySelector("input, select, textarea");
-      if (firstInput) {
-        firstInput.focus();
-      }
-    });
-  }
 })();
