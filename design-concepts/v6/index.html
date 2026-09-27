@@ -32,6 +32,11 @@
         <span class="brand__sub">Car Care Center</span>
       </a>
 
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn is-active" id="langEn" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-switch__btn" id="langKm" data-set-lang="km" aria-pressed="false" lang="km">ខ្មែរ</button>
+      </div>
+
       <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
@@ -40,13 +45,13 @@
 
       <nav class="primary-nav" id="primaryNav" aria-label="Primary">
         <ul class="primary-nav__list">
-          <li><a href="#top">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#top" data-km="ទំព័រដើម">Home</a></li>
+          <li><a href="#services" data-km="សេវាកម្ម">Services</a></li>
+          <li><a href="#gallery" data-km="រូបភាព">Gallery</a></li>
+          <li><a href="#about" data-km="អំពីយើង">About</a></li>
+          <li><a href="#contact" data-km="ទំនាក់ទំនង">Contact</a></li>
         </ul>
-        <a class="btn btn--gold primary-nav__cta" href="tel:+855967193151">Call Us</a>
+        <a class="btn btn--gold primary-nav__cta" href="tel:+855967193151" data-km="ទូរស័ព្ទមកយើង">Call Us</a>
       </nav>
     </div>
   </header>
@@ -55,64 +60,64 @@
 
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__copy">
-        <h1 id="hero-heading">Your Car, Properly Cared For</h1>
+        <h1 id="hero-heading" data-km="រថយន្តរបស់អ្នក ត្រូវបានថែទាំយ៉ាងល្អ">Your Car, Properly Cared For</h1>
         <p class="hero__motto" lang="km">លាងឡាន ពេញចិត្ត</p>
-        <p class="hero__subtext">Hand car wash and detailing in Chamkar Doung — walk in or call.</p>
-        <a class="btn btn--gold btn--lg" href="tel:+855967193151">Call Us</a>
+        <p class="hero__subtext" data-km="លាង និងថែទាំរថយន្តដោយដៃនៅចំការដូង — អាចមកផ្ទាល់ ឬទូរស័ព្ទមក។">Hand car wash and detailing in Chamkar Doung — walk in or call.</p>
+        <a class="btn btn--gold btn--lg" href="tel:+855967193151" data-km="ទូរស័ព្ទមកយើង">Call Us</a>
       </div>
       <div class="hero__media">
-        <img src="/assets/images/Carwash10.jpg" alt="Overhead banner at the shop reading its Khmer name, with a row of vehicle brand logos and the Cambodian flag flying above the wash bay." />
+        <img src="/assets/images/Carwash10.jpg" alt="Overhead banner at the shop reading its Khmer name, with a row of vehicle brand logos and the Cambodian flag flying above the wash bay." data-km-alt="បដាព័ត៌មាននៅខាងលើហាង សរសេរជាភាសាខ្មែរ ជាមួយនឹងឡូហ្គោម៉ាករថយន្តជាច្រើន និងទង់ជាតិកម្ពុជាបក់ខ្យល់នៅខាងលើកន្លែងលាងរថយន្ត។" />
         <div class="hero__overlay" aria-hidden="true"></div>
       </div>
     </section>
 
     <div class="trust-strip">
       <div class="container trust-strip__inner">
-        <span>Every vehicle welcome — sedans to pickups</span>
-        <span>Cambodian-owned, neighborhood car wash</span>
-        <span>Walk-ins welcome, or call ahead</span>
+        <span data-km="រថយន្តគ្រប់ប្រភេទសូមស្វាគមន៍ — ពីរថយន្តតូចដល់រថយន្តដឹកទំនិញ">Every vehicle welcome — sedans to pickups</span>
+        <span data-km="ជាកម្មសិទ្ធិខ្មែរ សេវាលាងរថយន្តក្នុងសហគមន៍">Cambodian-owned, neighborhood car wash</span>
+        <span data-km="អាចមកផ្ទាល់ ឬទូរស័ព្ទមកមុន">Walk-ins welcome, or call ahead</span>
       </div>
     </div>
 
     <section class="section services" id="services">
       <div class="container">
-        <h2>Services</h2>
+        <h2 data-km="សេវាកម្ម">Services</h2>
 
         <ul class="price-list">
           <li class="price-list__row">
             <div class="price-list__info">
-              <h3>Car Wash</h3>
-              <p>Full exterior wash, by hand.</p>
+              <h3 data-km="លាងរថយន្ត">Car Wash</h3>
+              <p data-km="លាងផ្នែកខាងក្រៅពេញលេញ ដោយដៃ។">Full exterior wash, by hand.</p>
             </div>
-            <p class="price-list__price" lang="km">លាងរថយន្ត</p>
+            <p class="price-list__price" lang="km" data-invert-en="Car Wash">លាងរថយន្ត</p>
           </li>
           <li class="price-list__row">
             <div class="price-list__info">
-              <h3>Seat &amp; Cushion Cleaning</h3>
-              <p>Upholstery shampoo for seats and cushions.</p>
+              <h3 data-km="បោកអាសនៈ និងខ្នើយ">Seat &amp; Cushion Cleaning</h3>
+              <p data-km="សាប៊ូបោកកៅអី និងខ្នើយរថយន្ត។">Upholstery shampoo for seats and cushions.</p>
             </div>
-            <p class="price-list__price" lang="km">បោកពូក</p>
+            <p class="price-list__price" lang="km" data-invert-en="Seat &amp; Cushion Cleaning">បោកពូក</p>
           </li>
           <li class="price-list__row">
             <div class="price-list__info">
-              <h3>Engine Wash</h3>
-              <p>Cleaning of the engine bay.</p>
+              <h3 data-km="លាងម៉ាស៊ីន">Engine Wash</h3>
+              <p data-km="សម្អាតបន្ទប់ម៉ាស៊ីន។">Cleaning of the engine bay.</p>
             </div>
-            <p class="price-list__price" lang="km">លាងម៉ាស៊ីន</p>
+            <p class="price-list__price" lang="km" data-invert-en="Engine Wash">លាងម៉ាស៊ីន</p>
           </li>
           <li class="price-list__row">
             <div class="price-list__info">
-              <h3>Car Polishing</h3>
-              <p>Exterior polish and shine.</p>
+              <h3 data-km="ប៉ូលារថយន្ត">Car Polishing</h3>
+              <p data-km="ខាត់ភ្លឺផ្នែកខាងក្រៅ។">Exterior polish and shine.</p>
             </div>
-            <p class="price-list__price" lang="km">ប៉ូលារថយន្ត</p>
+            <p class="price-list__price" lang="km" data-invert-en="Car Polishing">ប៉ូលារថយន្ត</p>
           </li>
           <li class="price-list__row">
             <div class="price-list__info">
-              <h3>Engine Oil Change</h3>
-              <p>Engine oil change.</p>
+              <h3 data-km="ប្តូរប្រេងម៉ាស៊ីន">Engine Oil Change</h3>
+              <p data-km="ប្តូរប្រេងម៉ាស៊ីនរថយន្ត។">Engine oil change.</p>
             </div>
-            <p class="price-list__price" lang="km">ប្តូរប្រេងម៉ាស៊ីន</p>
+            <p class="price-list__price" lang="km" data-invert-en="Engine Oil Change">ប្តូរប្រេងម៉ាស៊ីន</p>
           </li>
         </ul>
       </div>
@@ -120,25 +125,25 @@
 
     <section class="section gallery" id="gallery">
       <div class="container">
-        <h2>Gallery</h2>
+        <h2 data-km="រូបភាព">Gallery</h2>
         <div class="gallery-grid">
           <figure class="gallery-grid__item gallery-grid__item--accent">
-            <img src="/assets/images/Carwash1.jpg" style="--ar:4/5;" alt="Wide view of the wash bay with concrete wash troughs, a yellow service-list banner, and a blue water tank." />
+            <img src="/assets/images/Carwash1.jpg" style="--ar:4/5;" alt="Wide view of the wash bay with concrete wash troughs, a yellow service-list banner, and a blue water tank." data-km-alt="ទិដ្ឋភាពទូលំទូលាយនៃកន្លែងលាងរថយន្ត ជាមួយអាងលាងកបូន បដាសេវាកម្មពណ៌លឿង និងធុងទឹកពណ៌ខៀវ។" />
           </figure>
           <figure class="gallery-grid__item">
-            <img src="/assets/images/Carwash2.jpg" style="--ar:4/3;" alt="An orange pickup truck being washed at street level, with workers, a resting dog, and neighboring shopfront signage." />
+            <img src="/assets/images/Carwash2.jpg" style="--ar:4/3;" alt="An orange pickup truck being washed at street level, with workers, a resting dog, and neighboring shopfront signage." data-km-alt="រថយន្តដឹកទំនិញពណ៌ទឹកក្រូចកំពុងត្រូវបានលាង ជាមួយបុគ្គលិក និងឆ្កែកំពុងសម្រាកនៅជិតៗ។" />
           </figure>
           <figure class="gallery-grid__item">
-            <img src="/assets/images/Carwash9.jpg" style="--ar:16/11;" alt="Covered walkway with a blue water tank, drainage channel, and street view toward neighboring shops." />
+            <img src="/assets/images/Carwash9.jpg" style="--ar:16/11;" alt="Covered walkway with a blue water tank, drainage channel, and street view toward neighboring shops." data-km-alt="ផ្លូវដើរមានដំបូល ជាមួយធុងទឹកពណ៌ខៀវ ប្រឡាយលូ និងទិដ្ឋភាពផ្លូវទៅហាងជិតៗ។" />
           </figure>
           <figure class="gallery-grid__item gallery-grid__item--accent">
-            <img src="/assets/images/Carwash11.jpg" style="--ar:5/6;" alt="Wider view of the wash bay's overhead banner with neighboring shops visible along the street." />
+            <img src="/assets/images/Carwash11.jpg" style="--ar:5/6;" alt="Wider view of the wash bay's overhead banner with neighboring shops visible along the street." data-km-alt="ទិដ្ឋភាពទូលំទូលាយនៃបដានៅខាងលើកន្លែងលាងរថយន្ត ជាមួយហាងជិតៗតាមផ្លូវ។" />
           </figure>
           <figure class="gallery-grid__item">
-            <img src="/assets/images/Carwash14.jpg" style="--ar:4/3;" alt="An orange pickup truck at the wash bay with workers nearby and a dog resting in the shade." />
+            <img src="/assets/images/Carwash14.jpg" style="--ar:4/3;" alt="An orange pickup truck at the wash bay with workers nearby and a dog resting in the shade." data-km-alt="រថយន្តដឹកទំនិញពណ៌ទឹកក្រូចនៅកន្លែងលាងរថយន្ត ជាមួយបុគ្គលិកនិងឆ្កែសម្រាកនៅម្លប់។" />
           </figure>
           <figure class="gallery-grid__item">
-            <img src="/assets/images/Carwash6.jpg" style="--ar:5/4;" alt="Empty wash-bay troughs with a product shelf and the yellow service banner in the background." />
+            <img src="/assets/images/Carwash6.jpg" style="--ar:5/4;" alt="Empty wash-bay troughs with a product shelf and the yellow service banner in the background." data-km-alt="អាងលាងទទេ ជាមួយធ្នើផលិតផល និងបដាសេវាកម្មពណ៌លឿងនៅខាងក្រោយ។" />
           </figure>
         </div>
       </div>
@@ -147,7 +152,7 @@
     <section class="section about" id="about">
       <div class="container about__inner">
         <hr class="rule" />
-        <p class="about__text">Car Wash &amp; Car Care Center is a neighborhood hand car wash on Chamkar Doung Street, built around straightforward service and a clean, careful finish. We wash and detail every vehicle by hand — from daily runabouts to work trucks — because a properly cared-for car should be within easy reach, not a luxury. Stop by, or give us a call.</p>
+        <p class="about__text" data-km="Car Wash &amp; Car Care Center គឺជាហាងលាងរថយន្តក្នុងសហគមន៍ ស្ថិតនៅផ្លូវចំការដូង ដែលផ្តោតលើសេវាកម្មសាមញ្ញ និងលទ្ធផលស្អាតស្អំល្អិតល្អន់។ យើងលាង និងថែទាំរថយន្តគ្រប់ប្រភេទដោយដៃ — ចាប់ពីរថយន្តប្រើប្រចាំថ្ងៃ រហូតដល់រថយន្តដឹកទំនិញ — ព្រោះការថែទាំរថយន្តឱ្យបានត្រឹមត្រូវ គួរតែជារឿងងាយស្រួល មិនមែនជាប្រណីតកម្មទេ។ សូមអញ្ជើញមក ឬទូរស័ព្ទមកយើង។">Car Wash &amp; Car Care Center is a neighborhood hand car wash on Chamkar Doung Street, built around straightforward service and a clean, careful finish. We wash and detail every vehicle by hand — from daily runabouts to work trucks — because a properly cared-for car should be within easy reach, not a luxury. Stop by, or give us a call.</p>
         <hr class="rule" />
       </div>
     </section>
@@ -156,8 +161,8 @@
       <div class="container contact__grid">
 
         <div class="contact__side">
-          <h2>Contact Us</h2>
-          <p>Give us a call — either number works.</p>
+          <h2 data-km="ទាក់ទងយើង">Contact Us</h2>
+          <p data-km="ទូរស័ព្ទមកយើង — លេខណាមួយក៏បាន។">Give us a call — either number works.</p>
 
           <div class="contact__links">
             <a class="btn btn--outline-gold" href="tel:+855967193151">096 71 93 151</a>
@@ -183,25 +188,25 @@
       <div class="footer__col">
         <h3>Car Wash &amp; Car Care Center</h3>
         <p>Spean Thmor, Sangkat, Chamkar Doung Street (217), 8370, Cambodia</p>
-        <p><a href="https://www.google.com/maps/search/?api=1&query=FV8Q%2BMGX+Phnom+Penh+Cambodia" target="_blank" rel="noopener">View on Google Maps (FV8Q+MGX)</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=FV8Q%2BMGX+Phnom+Penh+Cambodia" target="_blank" rel="noopener" data-km="មើលទីតាំងលើ Google Maps (FV8Q+MGX)">View on Google Maps (FV8Q+MGX)</a></p>
       </div>
 
       <div class="footer__col">
-        <h3>Hours</h3>
+        <h3 data-km="ម៉ោងបើក">Hours</h3>
         <dl class="hours-list">
           <div>
-            <dt>Mon–Sat</dt>
+            <dt data-km="ច័ន្ទ–សៅរ៍">Mon–Sat</dt>
             <dd>7:00 AM – 6:00 PM</dd>
           </div>
           <div>
-            <dt>Sun</dt>
+            <dt data-km="អាទិត្យ">Sun</dt>
             <dd>7:00 AM – 5:00 PM</dd>
           </div>
         </dl>
       </div>
 
       <div class="footer__col">
-        <h3>Contact</h3>
+        <h3 data-km="ទំនាក់ទំនង">Contact</h3>
         <ul class="footer__social">
           <li><a href="tel:+855967193151">096 71 93 151</a></li>
           <li><a href="tel:+855975474017">097 54 74 017</a></li>
@@ -211,7 +216,7 @@
 
     <div class="container footer__bottom">
       <p>&copy; 2026 Car Wash &amp; Car Care Center.</p>
-      <a href="#top">Back to top</a>
+      <a href="#top" data-km="ត្រឡប់ទៅខាងលើ">Back to top</a>
     </div>
   </footer>
 
