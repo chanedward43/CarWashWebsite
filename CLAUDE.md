@@ -54,18 +54,28 @@ imagery are on hold until wireframes are approved. Don't flesh out page
 content speculatively; wait for approved wireframes per page.
 
 ## Design Concepts (`design-concepts/`)
-Five full, separately-built single-page design explorations (v1–v5), each
+Six full, separately-built single-page design explorations (v1–v6), each
 its own self-contained HTML/CSS/JS — not the same thing as the scaffold
 pages above, and not gated by "wait for wireframes" since these ARE the
 wireframe/design-direction exploration. Switch between them via the shared
-tab bar (`design-concepts/switcher.css`) at the top of every concept page.
-Serve via the `static-site` launch config and open `design-concepts/`.
+tab bar (`design-concepts/switcher.css`) at the top of every concept page —
+keep this tab bar in sync across all six files whenever a concept is added,
+renamed, or removed. Serve via the `static-site` launch config and open
+`design-concepts/`.
 
 - v1 Modern Sabai — warm minimal, terracotta + slate
 - v2 Auto Atelier — bold automotive editorial, cobalt + near-black
 - v3 Riverside Trust — dark corporate confidence, navy + gold
 - v4 Krama & Concrete — Cambodian-textile-pattern industrial, olive + brick
 - v5 Clearwater Minimal — quiet restraint, white + sky-blue accent
+- v6 Riverside Bold — the user's own remix: Riverside Trust's (v3) navy +
+  gold structure as the base ("the overall best design"), with Auto
+  Atelier's (v2) Archivo Black display font and two-tier header lockup
+  (used uppercase, header only — other headings/body stay normal case),
+  plus the shop's real Khmer name (លាងឡាន ពេញចិត្ត) added into the header
+  itself. The explanatory hero caption about the Khmer sign (present in
+  v3) is intentionally dropped here since the Khmer is now in the header
+  directly — don't re-add it.
 
 Each uses the same real content (business info above, the 16 real photos in
 `assets/images/`) so they're a fair side-by-side comparison — only the
